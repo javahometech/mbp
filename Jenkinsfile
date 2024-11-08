@@ -7,7 +7,7 @@ pipeline{
       }
       steps{
         echo "This is multi-branch pipeline"
-        echo "${scm.getRepositories()}"
+        echo "${hudson.plugins.git.GitSCM.GIT_PREVIOUS_COMMIT}"
       }
     }
   }
