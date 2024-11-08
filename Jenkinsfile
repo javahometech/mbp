@@ -6,7 +6,8 @@ pipeline{
         branch "develop"
       }
       steps{
-        echo "This is multi branch pipeline"
+        echo "This is multi-branch pipeline"
+        echo "${scm}"
       }
     }
   }
