@@ -7,7 +7,7 @@ pipeline{
       }
       steps{
         echo "This is multi-branch pipeline"
-        echo "${scm.URL}"
+        echo "${scm.getBranches()}"
       }
     }
   }
